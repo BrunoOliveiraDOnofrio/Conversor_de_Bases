@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<!-- saved from url=(0066)file:///C:/Users/Marise%20Miranda/Downloads/Marises%20Machine.html -->
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marise's Machine</title>
+    <link rel="stylesheet" href="estilo.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+      defer
+    ></script>
+
+    <link rel="icon" href="Imagem/iconProcessador.png" />
+  </head>
+
+  <body>
+    <div class="imagem">
+      <div class="menu">
+        <h1>Marise's Machine</h1>
+        <div class="base">
+          <ul>
+            <li onclick="aparecer_octal()" type="checkbox">Octal</li>
+            <li onclick="aparecer_hexa()" type="checkbox">Hexadecimal</li>
+            <li onclick="aparecer_bin()" type="checkbox">Binário</li>
+            <li onclick="aparecer_dec()" type="checkbox">Decimal</li>
+          </ul>
+        </div>
+
+        <div class="modoUso">
+          <a href="howToUse.html"><h3>Como usar ?</h3></a>
+        </div>
+      </div>
+      <div class="box-slider" id="formList">
+        <div class="slider">
+          <!-- Conversor DECIMAL -->
+          <!-- Conversor DECIMAL -->
+          <!-- Conversor DECIMAL -->
+          <!-- Conversor DECIMAL -->
+          <div class="corpo">
+            <div class="inputAzul">
+              <h3>Decimal</h3>
+              <input
+                id="demo1"
+                type="text"
+                placeholder="Digite o valor em decimal"
+              />
+            </div>
+
+            <div class="inputVerde" style="display: none" id="demo2_2">
+              <h3 style="display: none" id="demo2_1">Octal</h3>
+              <div
+                style="
+                  display: none;
+                  background-color: #dcdcdc;
+                  border-radius: 5px;
+                  padding: 5px;
+                  color: rgb(0, 0, 0);
+                  height: 40px;
+                  font-weight: 500;
+                "
+                id="demo2"
+              ></div>
+            </div>
+
+            <div class="inputVerde" style="display: none" id="demo3_2">
+              <h3 style="display: none" id="demo3_1">Hexadecimal</h3>
+              <div
+                style="
+                  display: none;
+                  background-color: #dcdcdc;
+                  border-radius: 5px;
+                  padding: 5px;
+                  color: rgb(7, 7, 7);
+                  height: 40px;
+                  font-weight: 500;
+                "
+                id="demo3"
+              ></div>
+            </div>
+
+            <div class="inputVerde" style="display: none" id="demo4_2">
+              <h3 style="display: none" id="demo4_1">Binário</h3>
+              <textarea
+                style="
+                  display: none;
+                  background-color: #dcdcdc;
+                  border-radius: 5px;
+                  padding: 50px;
+                  color: rgb(5, 5, 5);
+                  width: 60%;
+                  height: 50px;
+                  font-weight: 500;
+                "
+                id="demo4"
+              ></textarea>
+            </div>
+          </div>
+          <!-- Conversor Binário -->
+          <!-- Conversor Binário -->
+          <!-- Conversor Binário -->
+          <!-- Conversor Binário -->
+          <div class="corpo">
+            <div class="inputAzul">
+              <h3>Binário</h3>
+              <textarea
+                id="textarea_binario"
+                type="text"
+                placeholder="Digite o valor em Binário"
+              ></textarea>
+            </div>
+
+            <div class="inputVerde" style="display: none" id="octal2_2">
+              <h3 style="display: none" id="octal2_1">Octal</h3>
+              <div
+                style="
+                  display: none;
+                  background-color: #dcdcdc;
+                  border-radius: 5px;
+                  padding: 5px;
+                  color: rgb(0, 0, 0);
+                  height: 40px;
+                  font-weight: 500;
+                "
+                id="div_octal"
+              ></div>
+            </div>
+
+            <div class="inputVerde" style="display: none" id="hexadecimal2_2">
+              <h3 style="display: none" id="hexadecimal2_1">Hexadecimal</h3>
+              <div
+                style="
+                  display: none;
+                  background-color: #dcdcdc;
+                  border-radius: 5px;
+                  padding: 5px;
+                  color: rgb(7, 7, 7);
+                  height: 40px;
+                  font-weight: 500;
+                "
+                id="div_hexadecimal"
+              ></div>
+            </div>
+
+            <div class="inputVerde" style="display: none" id="decimal2_2">
+              <h3 style="display: none" id="decimal2_1">Decimal</h3>
+              <div
+                style="
+                  display: none;
+                  background-color: #dcdcdc;
+                  border-radius: 5px;
+                  padding: 5px;
+                  color: rgb(7, 7, 7);
+                  height: 40px;
+                  font-weight: 500;
+                "
+                id="div_decimal"
+              ></div>
+            </div>
+          </div>
+          <!-- Conversor OCTAL -->
+          <!-- Conversor OCTAL -->
+          <!-- Conversor OCTAL -->
+          <!-- Conversor OCTAL -->
+          <div class="corpo">
+            <div class="inputAzul">
+              <h3>Octal</h3>
+              <input
+                id="input_octal3"
+                type="text"
+                placeholder="Digite o valor em Octal"
+              />
+            </div>
+
+            <div class="inputVerde" style="display: none" id="hexadecimal3_2">
+              <h3 style="display: none" id="hexadecimal3_1">Hexadecimal</h3>
+              <div
+                style="
+                  display: none;
+                  background-color: #dcdcdc;
+                  border-radius: 5px;
+                  padding: 5px;
+                  color: rgb(7, 7, 7);
+                  height: 40px;
+                  font-weight: 500;
+                "
+                id="div_hexadecimal3"
+              ></div>
+            </div>
+
+            <div class="inputVerde" style="display: none" id="binario3_2">
+              <h3 style="display: none" id="binario3_1">Binário</h3>
+              <textarea
+                style="
+                  display: none;
+                  background-color: #dcdcdc;
+                  border-radius: 5px;
+                  padding: 50px;
+                  color: rgb(5, 5, 5);
+                  width: 60%;
+                  height: 50px;
+                  font-weight: 500;
+                "
+                id="div_binario3"
+              ></textarea>
+            </div>
+
+            <div class="inputVerde" style="display: none" id="decimal3_2">
+              <h3 style="display: none" id="decimal3_1">Decimal</h3>
+              <div
+                style="
+                  display: none;
+                  background-color: #dcdcdc;
+                  border-radius: 5px;
+                  padding: 5px;
+                  color: rgb(7, 7, 7);
+                  height: 40px;
+                  font-weight: 500;
+                "
+                id="div_decimal3"
+              ></div>
+            </div>
+          </div>
+          <!-- Conversor HEXADECIMAL -->
+          <!-- Conversor HEXADECIMAL -->
+          <!-- Conversor HEXADECIMAL -->
+          <!-- Conversor HEXADECIMAL -->
+          <div class="corpo">
+            <div class="inputAzul">
+              <h3>Hexadecimal</h3>
+              <input
+                id="input_hexadecimal4"
+                type="text"
+                placeholder="Digite o valor em Hexadecimal"
+              />
+            </div>
+
+            <div class="inputVerde" style="display: none" id="octal4_2">
+              <h3 style="display: none" id="octal4_1">Octal</h3>
+              <div
+                style="
+                  display: none;
+                  background-color: #dcdcdc;
+                  border-radius: 5px;
+                  padding: 5px;
+                  color: rgb(7, 7, 7);
+                  height: 40px;
+                  font-weight: 500;
+                "
+                id="div_octal4"
+              ></div>
+            </div>
+
+            <div class="inputVerde" style="display: none" id="binario4_2">
+              <h3 style="display: none" id="binario4_1">Binário</h3>
+              <textarea
+                style="
+                  display: none;
+                  background-color: #dcdcdc;
+                  border-radius: 5px;
+                  padding: 50px;
+                  color: rgb(5, 5, 5);
+                  width: 60%;
+                  height: 50px;
+                  font-weight: 500;
+                "
+                id="div_binario4"
+              ></textarea>
+            </div>
+
+            <div class="inputVerde" style="display: none" id="decimal4_2">
+              <h3 style="display: none" id="decimal4_1">Decimal</h3>
+              <div
+                style="
+                  display: none;
+                  background-color: #dcdcdc;
+                  border-radius: 5px;
+                  padding: 5px;
+                  color: rgb(7, 7, 7);
+                  height: 40px;
+                  font-weight: 500;
+                "
+                id="div_decimal4"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="direction">
+        <button id="prev"><</button>
+        <button onclick="converter()">Converter</button>
+        <button id="next">></button>
+      </div>
+    </div>
+
+
+    <script src="ShowButton.js" defer></script>
+    <script src="SliderButton.js" defer></script>
+    <script src="Conversor.js" defer></script>
+  </body>
+</html>

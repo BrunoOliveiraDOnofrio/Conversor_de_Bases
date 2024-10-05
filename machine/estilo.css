@@ -1,0 +1,198 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* overflow-x: hidden; */
+    text-decoration: none;
+}
+
+.imagem{
+    background-image: url(Imagem/Logo.webp);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    height: 100vh;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+    color: rgb(255, 255, 255);
+    border: solid 3px black;
+    height: 30vh;
+    box-shadow: 1px 1px 10px 10px black;
+}
+
+.menu > h1{
+    background-color: white;
+    color: black;
+    box-shadow: 1px 1px 10px 10px black;
+    transition: 0.5s;
+}
+
+.menu >h1:hover{
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.671);
+    color: white;
+    transition: 0.5s;
+}
+
+.menu > .base > ul{
+    list-style-type: none;
+    display: flex;
+}
+
+.menu > .base > ul > li{
+    padding: 10px;
+    font-size: small;
+    color: black;
+    background-color: white;
+    border-radius: 8px;
+    margin: 30px;
+    transition: 0.5s;
+    box-shadow: 1px 1px 10px 10px black;
+}
+
+.menu > .base > ul > li:hover{
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.671);
+    color: white;
+    transition: 0.5s;
+}
+
+.menu > .modoUso > a > h3{
+    padding: 10px;
+    font-size: small;
+    color: black;
+    background-color: white;
+    border-radius: 8px;
+    margin: 30px;
+    transition: 0.5s;
+    box-shadow: 1px 1px 10px 10px black;
+
+}
+
+.menu > .modoUso > a > h3:hover{
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.671);
+    color: white;
+    transition: 0.5s;
+}
+
+.box-slider{
+    width: 1200px;
+    max-width: 100%;
+    overflow: auto;
+    margin: 30px auto;  
+    scroll-behavior: smooth;
+    transition:  0.5s ease;
+    box-shadow: 5px 5px 20px 20px black;
+}
+
+.box-slider::-webkit-scrollbar{
+    display: none;
+    
+}
+
+.slider{
+    display: flex;
+}
+
+.corpo{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    color: white;
+    height: 50vh;
+    width: 100%;
+}
+
+.corpo > h3{
+    font-size: 20px;
+}
+
+.corpo > input{
+    background-color: white;
+    border-radius: 8px;
+    border: 5px solid white;
+}
+
+.corpo > .inputAzul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url(Imagem/Banner.jpg);
+    box-shadow: 1px 1px 10px 10px black;
+    width: 300px;
+}
+
+.corpo > .inputAzul > h3{
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+}
+
+.corpo > .inputAzul > input{
+    margin: auto;
+    height: 80px;
+    width: 200px;
+}
+
+.corpo > .inputAzul > textarea{
+    margin: auto;
+    height: 80px;
+    width: 200px;
+}
+/* FIM INPUT AZUL */
+
+.corpo > .inputVerde{
+    background-image: url(Imagem/BannerResultado.png);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 1px 1px 10px 10px black;
+    width: 300px;
+}
+
+.corpo > .inputVerde > h3{
+    text-align: center;
+    font-size: 50px;
+}
+
+.corpo > .inputVerde > div{
+    width: 50%;
+    margin: auto;
+}
+
+.corpo > .inputVerde > textarea{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+/* FIM INPUT VERDE */
+.direction{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    gap: 10px;
+}
+
+.direction > button{
+    background-color: white;
+    border: solid 2px whitesmoke;
+    border-radius: 80px;
+    padding: 15px;
+    transition: 0.5s;
+    box-shadow: 1px 1px 10px 10px black;
+}
+
+.direction > button:hover{
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.671);
+    color: white;
+    transition: 0.5s;
+}
+
